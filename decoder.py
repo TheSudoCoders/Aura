@@ -36,7 +36,7 @@ class APT(object):
         # Digitize
         digitized = self._digitize(reshaped[:, 2])
         # Reshape and form matrix
-        matrix = self._reshape(digitized)
+        matrix = self.reshape(digitized)
         # Render image from matrix
         image = Image.fromarray(matrix)
         if not outfile is None:
